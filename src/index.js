@@ -1,12 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import "./index.css";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import Navigation from "./Navigation";
+import Header from "./Header";
+import About from "./About";
+import Contact from "./Contact";
+import Footer from "./Footer";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Navigation />
+        <Header />
+        <About />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.querySelector("#root"));
