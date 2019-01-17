@@ -1,12 +1,12 @@
 import React from "react";
 
-import Form from "./Form";
+import ContactInfo from "./ContactInfo";
 
 class Contact extends React.Component {
   render() {
     return (
       <div className="Contact">
-        <Form />
+        <ContactInfo />
       </div>
     );
   }
