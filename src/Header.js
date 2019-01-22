@@ -10,7 +10,7 @@ class Header extends React.Component {
     return (
       <div className="Header">
         <header className="headerMain">
-          <div class="header__logo-box" />
+          <div className="header__logo-box" />
 
           <div className="header__text-box">
             <h1 className="heading-primary">
