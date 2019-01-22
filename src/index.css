@@ -1,3 +1,18 @@
+/*
+COLORS
+color-primary: rgb(255, 131, 40),
+color-primary-light: rgba(255, 131, 57, 0.4),
+color-primary-dark: rgba(197, 73, 0, 0.4)
+color-grey-light-1: #f7f7f7,
+
+Grid
+grid-width: 114rem;
+gutter-vertical: 8rem;
+gutter-horizontal: 2rem
+
+*/
+
+/* BASE*/
 *,
 *::after,
 *::before {
@@ -19,12 +34,30 @@ body {
   box-sizing: border-box;
 }
 
+/* UTILITY CLASSES */
+.u-center-text {
+  text-align: center;
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+/* LAYOUT */
+
 .headerMain {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(255, 131, 57, 0.4),
-      rgba(197, 73, 0, 0.4)
+      rgba(255, 131, 40, 0.7),
+      rgba(197, 100, 50, 0.7)
     ),
     url("./img/hero.jpg");
   background-size: cover;
@@ -48,6 +81,8 @@ body {
   text-align: center;
 }
 
+/* TYPOGRAPHY */
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -67,11 +102,49 @@ body {
 }
 .heading-primary--sub {
   display: block;
+  line-height: 3.5rem;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 131, 40),
+    rgb(255, 100, 50)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+/* ANIMATIONS */
 
 @keyframes moveInLeft {
   0% {
@@ -112,6 +185,7 @@ body {
   }
 }
 
+/* BUTTONS */
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -162,4 +236,88 @@ body {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
+}
+
+.btn-text:link,
+.btn-text:visited {
+  font-size: 1.6rem;
+  color: rgb(255, 131, 40);
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255, 131, 40);
+  padding: 3px;
+  transition: all 0.2s;
+}
+
+.btn-text:hover {
+  background-color: rgb(255, 131, 40);
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 0.5rem;
+  transform: translateY(-2px);
+}
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  transform: translateY(0px);
+}
+
+/* ABOUT */
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+/* IMAGE COMPOSITION */
+.composition {
+  position: relative;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.9);
+}
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__photo--p2 {
+  right: -10%;
+  top: 2rem;
+}
+
+.composition__photo--p3 {
+  left: 15%;
+  top: 10rem;
+}
+
+.composition__photo:hover {
+  cursor: pointer;
+  outline: 15px solid rgb(255, 131, 40);
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+/* FACTS */
+.Facts {
+  text-align: center;
+  padding: 12rem 0;
+}
+
+.Avatar {
+  width: 40%;
 }

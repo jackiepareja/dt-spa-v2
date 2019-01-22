@@ -6,6 +6,7 @@ import "./index.css";
 import Navigation from "./Navigation";
 import Header from "./Header";
 import About from "./About";
+import Facts from "./Facts";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -16,6 +17,7 @@ class App extends React.Component {
         <Navigation />
         <Header />
         <About />
+        <Facts />
         <Contact />
         <Footer />
       </div>
