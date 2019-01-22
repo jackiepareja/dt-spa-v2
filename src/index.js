@@ -2,22 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
+import "./res/styles/icon-font.css";
 
-import Navigation from "./Navigation";
-import Header from "./Header";
-import About from "./About";
-import Facts from "./Facts";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import About from "./components/About";
+import Features from "./components/Features";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navigation />
         <Header />
         <About />
-        <Facts />
+        <Features />
         <Contact />
         <Footer />
       </div>
