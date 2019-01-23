@@ -7,7 +7,7 @@ class Features extends React.Component {
     return (
       <div className="Features">
         <section className="section-features">
-          <div className="row container">
+          <div className="row container u-margin-center">
             <FeatureBox
               icon="icon-basic-star feature-box__icon"
               featureTitle="Trained"
