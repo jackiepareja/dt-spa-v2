@@ -25,7 +25,7 @@ class AboutText extends React.Component {
             pickled.
           </p>
 
-          <a href="#" className="btn-text">
+          <a href="/" className="btn-text">
             Learn More &rarr;
           </a>
         </div>

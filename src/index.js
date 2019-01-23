@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Features from "./components/Features";
 import Services from "./components/Services";
-import Contact from "./components/Contact";
+import Booking from "./components/Booking";
 import Footer from "./components/Footer";
 
 class App extends React.Component {
@@ -19,7 +19,7 @@ class App extends React.Component {
         <About />
         <Features />
         <Services />
-        <Contact />
+        <Booking />
         <Footer />
       </div>
     );

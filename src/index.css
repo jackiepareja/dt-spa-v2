@@ -120,6 +120,42 @@ body {
   }
 }
 
+/* BOOKING/BOOKING INFO
+================================================ */
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 131, 40, 0.7),
+    rgba(197, 100, 50, 0.7)
+  );
+}
+
+.book-row {
+  margin: 0 auto;
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.7) 50%,
+      transparent 50%
+    ),
+    url("./res/img/pups/book-now.jpg");
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+
+  height: 50rem;
+}
+
+.book__form {
+  width: 50%;
+  padding: 6rem;
+}
+
 /* BUTTONS
 ================================================ */
 .btn:link,
@@ -154,6 +190,15 @@ body {
 }
 .btn--white::after {
   background-color: #fff;
+}
+
+.btn--orange {
+  background-color: rgb(255, 131, 40);
+  color: #fff;
+}
+
+.btn--orange::after {
+  background-color: rgb(255, 131, 40);
 }
 
 .btn::after {
@@ -244,7 +289,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
-  min-height: 47vh;
+  height: 42rem;
 }
 
 .feature-box:hover {
@@ -285,6 +330,7 @@ body {
   background-position: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .header__logo-box {
   position: absolute;
@@ -306,7 +352,7 @@ body {
 ================================================*/
 .section-services {
   background-color: #f7f7f7;
-  padding: 25rem 0 40rem;
+  padding: 25rem 0 15rem;
   margin-top: -12rem;
 }
 
@@ -317,10 +363,11 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem;
+  cursor: pointer;
 }
 
 .card__side {
-  height: 50rem;
+  height: 52rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
@@ -328,6 +375,7 @@ body {
   width: 100%;
   backface-visibility: hidden;
   border-radius: 3px;
+  overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
@@ -357,7 +405,78 @@ body {
 
 /* FRONT SIDE STYLING */
 .card__picture {
-  background-image: url(../);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  height: 23rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 75%;
+}
+
+.card__heading-span {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 185, 0, 0.85),
+    rgba(255, 119, 48, 0.85)
+  );
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.card__details {
+  padding: 3rem;
+}
+
+.card__details > ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__details > ul > li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.card__details > ul > li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__price-box {
+  text-align: center;
+  margin-bottom: 8rem;
+  color: #fff;
+}
+
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 
 /* TYPOGRAPHY
@@ -431,6 +550,18 @@ body {
 }
 .u-margin-center {
   margin: auto;
+}
+
+.u-margin-top-small {
+  margin-top: 1.5rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem;
 }
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;

@@ -12,17 +12,17 @@ class AboutImgComposition extends React.Component {
           <div className="composition">
             <img
               src={dogPic3}
-              alt="Photo 1"
+              alt="doggies"
               className="composition__photo composition__photo--p1"
             />
             <img
               src={dogPic1}
-              alt="Photo 2"
+              alt="doggies"
               className="composition__photo composition__photo--p2"
             />
             <img
               src={dogPic2}
-              alt="Photo 3"
+              alt="doggies"
               className="composition__photo composition__photo--p3"
             />
           </div>
