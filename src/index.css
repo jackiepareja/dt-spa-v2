@@ -126,8 +126,8 @@ body {
   padding: 15rem 0;
   background-image: linear-gradient(
     to right bottom,
-    rgba(255, 131, 40, 0.7),
-    rgba(197, 100, 50, 0.7)
+    rgba(255, 161, 40, 0.8),
+    rgba(255, 101, 40, 0.8)
   );
 }
 
@@ -138,7 +138,7 @@ body {
 .book {
   background-image: linear-gradient(
       105deg,
-      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.9) 0%,
       rgba(255, 255, 255, 0.7) 50%,
       transparent 50%
     ),
@@ -147,6 +147,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
+  background-position: right;
 
   height: 50rem;
 }
@@ -313,6 +314,56 @@ body {
 
 .feature-box__text {
   font-size: inherited;
+}
+/* FORMS
+================================================*/
+.form {
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  color: inherit;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgb(255, 131, 40);
+}
+
+.form_input:focus:invalid {
+  border-bottom: 3px solid orangered;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
 }
 
 /* HEADER
