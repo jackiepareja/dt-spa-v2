@@ -4,7 +4,7 @@ class AboutText extends React.Component {
   render() {
     return (
       <div className="AboutText">
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <h3 className="heading-tertiary u-margin-bottom-small">
             Dog walks like you never have before
           </h3>

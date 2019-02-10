@@ -1,14 +1,18 @@
 import React from "react";
 
 import CTA from "./CTA";
-import "../index.css";
+import "../sass/index.scss";
+
+import Logo from "../res/img/logo.png";
 
 class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-        <header className="headerMain">
-          <div className="header__logo-box" />
+        <header className="header">
+          <div className="header__logo-box">
+            <img src={Logo} className="header__logo" alt="logo" />
+          </div>
 
           <div className="header__text-box">
             <h1 className="heading-primary">

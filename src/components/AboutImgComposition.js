@@ -8,7 +8,7 @@ class AboutImgComposition extends React.Component {
   render() {
     return (
       <div className="AboutImgComposition">
-        <div className="col-sm-6">
+        <div className="col-md-6">
           <div className="composition">
             <img
               src={dogPic3}

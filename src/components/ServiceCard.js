@@ -30,7 +30,7 @@ const ServiceCard = props => {
               <div className="card__price-box">
                 <p className="card__price-only">Starting at</p>
                 <p className="card__price-value">{props.priceValue}</p>
-                <a href="/" className="btn btn--white">
+                <a href="#bookNow" className="btn btn--white btn--large">
                   Book now!
                 </a>
               </div>

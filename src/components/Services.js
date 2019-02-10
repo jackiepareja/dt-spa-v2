@@ -40,7 +40,7 @@ class Services extends React.Component {
               />
             </div>
             <div className="services__cta u-margin-center u-margin-top-big">
-              <a href="/" className="btn btn--orange">
+              <a href="#bookNow" className="btn btn--orange btn--large">
                 Book Now!
               </a>
             </div>

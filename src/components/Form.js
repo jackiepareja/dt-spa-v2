@@ -4,7 +4,7 @@ class Form extends React.Component {
   render() {
     return (
       <div className="Form">
-        <form>
+        <form id="bookNow">
           <div className="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input
@@ -37,7 +37,7 @@ class Form extends React.Component {
               Check me out
             </label>
           </div>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary btn--large">
             Submit
           </button>
         </form>

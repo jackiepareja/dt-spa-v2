@@ -4,48 +4,46 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className="Navigation">
-        <nav className="navbar navbar-default">
-          <div className="container-fluid">
-            <div className="navbar-header">
-              <button
-                type="button"
-                className="navbar-toggle collapsed"
-                data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false"
-              >
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar" />
-                <span className="icon-bar" />
-                <span className="icon-bar" />
-              </button>
-              <a className="navbar-brand" href="#">
-                Dog Tales
-              </a>
-            </div>
+        <input
+          type="checkbox"
+          id="navi-toggle"
+          className="navigation__checkbox"
+        />
 
-            <div
-              className="collapse navbar-collapse"
-              id="bs-example-navbar-collapse-1"
-            >
-              <ul className="nav navbar-nav navbar-right">
-                <li className="active">
-                  <a href="#">
-                    Home <span className="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">FAQ</a>
-                </li>
-                <li>
-                  <a href="#">Book A Walk!</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <label className="navigation__button" for="navi-toggle">
+          <span className="navigation__icon"> &nbsp; </span>
+        </label>
+
+        <div className="navigation__background">&nbsp;</div>
+
+        <nav className="navigation__nav">
+          <ul className="navigation__list">
+            <li className="navigation__item">
+              <a href="/" className="navigation__link">
+                About Dog Tales
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="/" className="navigation__link">
+                Dog Tales Benefits
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="/" className="navigation__link">
+                Services
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="/" className="navigation__link">
+                Book Now
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="/" className="navigation__link">
+                Contact Us
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     );
