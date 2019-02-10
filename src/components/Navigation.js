@@ -19,28 +19,28 @@ class Navigation extends React.Component {
         <nav className="navigation__nav">
           <ul className="navigation__list">
             <li className="navigation__item">
-              <a href="/" className="navigation__link">
+              <a href="#aboutCompany" className="navigation__link">
                 About Dog Tales
               </a>
             </li>
             <li className="navigation__item">
-              <a href="/" className="navigation__link">
+              <a href="#aboutFeatures" className="navigation__link">
                 Dog Tales Benefits
               </a>
             </li>
             <li className="navigation__item">
-              <a href="/" className="navigation__link">
+              <a href="#aboutServices" className="navigation__link">
                 Services
               </a>
             </li>
             <li className="navigation__item">
-              <a href="/" className="navigation__link">
+              <a href="#bookNow" className="navigation__link">
                 Book Now
               </a>
             </li>
             <li className="navigation__item">
-              <a href="/" className="navigation__link">
-                Contact Us
+              <a href="#checkFooter" className="navigation__link">
+                Careers
               </a>
             </li>
           </ul>
