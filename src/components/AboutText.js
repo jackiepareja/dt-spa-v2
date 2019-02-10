@@ -25,7 +25,7 @@ class AboutText extends React.Component {
             and within the routine.
           </p>
 
-          <a href="/" className="btn-text">
+          <a href="#bookNow" className="btn-text">
             Learn More &rarr;
           </a>
         </div>
