@@ -19,10 +19,10 @@ class AboutText extends React.Component {
           <p className="paragraph">
             We're a pet services company based in San Francisco and we launched
             in 2017. In just a less than a year, we've grown to almost 100
-            doggie clients and 6 tight-knit team members. Our clients have
-            regarded us as consistent, safe and trust-worthy. We put a lot of
-            time and effort in our walk routes to ensure our walks are enjoyable
-            and within the routine.
+            consistent doggies and average almost 4,000 walks each month. Our
+            clients have regarded us as consistent, safe and trust-worthy. We
+            put a lot of time and effort in our routes to ensure our walks are
+            enjoyable and within your doggie's routine.
           </p>
 
           <a href="#bookNow" className="btn-text">
