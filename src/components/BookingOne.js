@@ -6,7 +6,7 @@ class BookingOne extends React.Component {
       <div className="BookingOne">
         <div className="form__group">
           <input
-            type="text"
+            type="hidden"
             className="form__input"
             placeholder="Full name"
             id="name"
@@ -19,7 +19,7 @@ class BookingOne extends React.Component {
 
         <div className="form__group">
           <input
-            type="email"
+            type="hidden"
             className="form__input"
             placeholder="Email address"
             id="email"
@@ -33,7 +33,7 @@ class BookingOne extends React.Component {
         <div className="form__group ">
           <div className="form__radio-group">
             <input
-              type="radio"
+              type="hidden"
               id="walk"
               className="form__radio-input"
               name="service"
@@ -46,7 +46,7 @@ class BookingOne extends React.Component {
 
           <div className="form__radio-group">
             <input
-              type="radio"
+              type="hidden"
               id="boarding"
               className="form__radio-input"
               name="service"
@@ -59,7 +59,7 @@ class BookingOne extends React.Component {
 
           <div className="form__radio-group">
             <input
-              type="radio"
+              type="hidden"
               id="checkin"
               className="form__radio-input"
               name="service"

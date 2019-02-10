@@ -13,7 +13,9 @@ class BookingInfo extends React.Component {
               className="form"
               name="contact"
               method="POST"
-              data-netlify="true"
+              netlify
+              netlify-honeypot="bot-field"
+              hidden
             >
               <div className=" u-margin-bottom-medium">
                 <h2 className="heading-secondary">Contact Us</h2>
