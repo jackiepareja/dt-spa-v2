@@ -2,6 +2,7 @@ import React from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 
 import Logo from "../res/img/logo.png";
+import Gerardo from "../res/img/gerardo.jpg";
 
 class Footer extends React.Component {
   render() {
@@ -45,10 +46,26 @@ class Footer extends React.Component {
             </div>
             <div className="col-sm-6">
               <p className="footer__copyright">
-                Locations: Balboa Park, Bernal Heights, Castro, Glen Park,
-                Marina, Mission, Mission Bay, Noe Valley, Financial District,
-                South of Market, South Beach, Parkmerced, Sunset, Potrero Hill,
-                Union Square, Vis Valley. Inquire for more Info.
+                <div className="row container">
+                  <div className="col-sm-6">
+                    Interested in learning more about Dog Tales or Joining our
+                    pack?You can contact us at{" "}
+                    <a className="footer__link" href="mailto:ruff@dogtalespack">
+                      ruff@dogtalespack
+                    </a>{" "}
+                    or at
+                    <a className="footer__link" href="4153609011">
+                      &nbsp; 415-360-9011
+                    </a>
+                  </div>
+                  <div className="col-sm-6">
+                    <img
+                      className="gerardo-image"
+                      src={Gerardo}
+                      alt="Gerardo Vinces"
+                    />
+                  </div>
+                </div>
               </p>
             </div>
           </div>
