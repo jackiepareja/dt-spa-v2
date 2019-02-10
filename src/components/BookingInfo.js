@@ -9,7 +9,7 @@ class BookingInfo extends React.Component {
         <div className="book">
           <div className="book__form">
             <form
-              action="index.php"
+              action=""
               className="form"
               name="contact"
               method="POST"
