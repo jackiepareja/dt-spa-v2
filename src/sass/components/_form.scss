@@ -75,6 +75,10 @@
   cursor: pointer;
   position: relative;
   padding-left: 3.1rem;
+
+  @include respond(phone) {
+    padding-left: 2.4rem;
+  }
 }
 
 .form__radio-button {

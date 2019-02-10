@@ -49,7 +49,7 @@ class Footer extends React.Component {
                   <div className="row container">
                     <div className="col-sm-6">
                       Interested in learning more about Dog Tales or Joining our
-                      pack?You can contact us at{" "}
+                      pack? You can contact us at{" "}
                       <a
                         className="footer__link"
                         href="mailto:ruff@dogtalespack"
