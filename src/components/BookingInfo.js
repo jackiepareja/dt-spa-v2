@@ -8,7 +8,12 @@ class BookingInfo extends React.Component {
       <div className="BookingInfo">
         <div className="book">
           <div className="book__form">
-            <form action="/" className="form">
+            <form
+              action="index.php"
+              className="form"
+              name="contactForm"
+              method="post"
+            >
               <div className=" u-margin-bottom-medium">
                 <h2 className="heading-secondary">Contact Us</h2>
               </div>

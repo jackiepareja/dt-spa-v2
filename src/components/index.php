@@ -1,44 +1,81 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
+if(isset($_POST['email'])) {
 
-if (empty($_POST['fname']) && empty($_POST['email'])) die();
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "ruff@dogtalespack.com";
+    $email_subject = "Someone Emailed you from Dog Tales Pack!";
 
-if ($_POST)
-	{
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
 
-	// set response code - 200 OK
 
-	http_response_code(200);
-	$subject = $_POST['name'];
-	$to = "pareja.jackie@gmail.com";
-	$from = $_POST['email'];
+    // validation expected data exists
+    if(!isset($_POST['name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['message'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
 
-	// data
 
-	$msg = $_POST['number'] . $_POST['message'];
 
-	// Headers
+    $first_name = $_POST['name']; // required
+    $email_from = $_POST['email']; // required
+    $comments = $_POST['message']; // required
 
-	$headers = "MIME-Version: 1.0\r\n";
-	$headers.= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers.= "From: <" . $from . ">";
-	mail($to, $subject, $msg, $headers);
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-	// echo json_encode( $_POST );
+  if(!preg_match($email_exp,$email_from)) {
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+  }
 
-	echojson_encode(array(
-		"sent" => true
-	));
-	}
-  else
-	{
+    $string_exp = "/^[A-Za-z .'-]+$/";
 
-	// tell the user about error
+  if(!preg_match($string_exp,$first_name)) {
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  }
 
-	echojson_encode(["sent" => false, "message" => "Something went wrong"]);
-	}
 
+  if(strlen($comments) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+
+    $email_message = "Form details below.\n\n";
+
+
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+
+
+
+    $email_message .= "Name: ".clean_string($first_name)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Message: ".clean_string($comments)."\n";
+
+// create email headers
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);
 ?>
-view raw
+
+<!-- include your own success html here -->
+
+<p style="color:orangered;">Thank you for contacting us. We will be in touch with you very soon.</p>
+
+<?php
+
+}
+?>
