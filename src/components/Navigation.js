@@ -10,7 +10,7 @@ class Navigation extends React.Component {
           className="navigation__checkbox"
         />
 
-        <label className="navigation__button" for="navi-toggle">
+        <label className="navigation__button" htmlFor="navi-toggle">
           <span className="navigation__icon"> &nbsp; </span>
         </label>
 

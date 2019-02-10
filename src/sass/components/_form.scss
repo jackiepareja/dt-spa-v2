@@ -3,7 +3,6 @@
     margin-bottom: 2rem;
   }
 
-  &__textarea,
   &__input {
     color: inherit;
     font-size: 1.5rem;
@@ -22,16 +21,27 @@
   }
 }
 
-.form .form__input:focus {
+#message.form_textarea {
+  color: inherit;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+}
+
+#message.form_textarea,
+.form .form__input:focus .form .form__input:focus {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid rgb(255, 131, 40);
 }
 
-.form_input:focus:invalid {
-  border-bottom: 3px solid orangered;
-}
-
+#message.form_textarea,
 .form__input::-webkit-input-placeholder {
   color: #999;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollableAnchor from "react-scrollable-anchor";
 
 import Logo from "../res/img/logo.png";
 import Gerardo from "../res/img/gerardo.jpg";
@@ -45,7 +44,7 @@ class Footer extends React.Component {
               </div>
             </div>
             <div className="col-sm-6">
-              <p className="footer__copyright">
+              <div className="footer__copyright">
                 <div className="row container">
                   <div className="col-sm-6">
                     Interested in learning more about Dog Tales or Joining our
@@ -66,7 +65,7 @@ class Footer extends React.Component {
                     />
                   </div>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
           <div className="row container u-margin-center">

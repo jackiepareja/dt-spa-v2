@@ -1,22 +1,6 @@
 import React from "react";
 
 class BookingOne extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-      mailSent: false,
-      error: null
-    };
-  }
-
-  handleFormSubmit(event) {
-    event.preventDefault();
-    console.log(this.state);
-  }
-
   render() {
     return (
       <div className="BookingOne">
@@ -27,10 +11,8 @@ class BookingOne extends React.Component {
             placeholder="Full name"
             id="name"
             required
-            value={this.state.name}
-            onChange={e => this.setState({ name: e.target.value })}
           />
-          <label for="name" className="form__label">
+          <label htmlFor="name" className="form__label">
             Full name
           </label>
         </div>
@@ -42,10 +24,8 @@ class BookingOne extends React.Component {
             placeholder="Email address"
             id="email"
             required
-            value={this.state.email}
-            onChange={e => this.setState({ email: e.target.value })}
           />
-          <label for="email" className="form__label">
+          <label htmlFor="email" className="form__label">
             Email address
           </label>
         </div>
@@ -54,13 +34,11 @@ class BookingOne extends React.Component {
           <div className="form__radio-group">
             <input
               type="radio"
-              id="walk"
+              id="dog_walk"
               className="form__radio-input"
               name="service"
-              value={this.state.walk}
-              onChange={e => this.setState({ walk: e.target.value })}
             />
-            <label for="walk" className="form__radio-label">
+            <label htmlFor="walk" className="form__radio-label">
               <span className="form__radio-button" />
               Dog Walking
             </label>
@@ -69,13 +47,11 @@ class BookingOne extends React.Component {
           <div className="form__radio-group">
             <input
               type="radio"
-              id="boarding"
+              id="dog_boarding"
               className="form__radio-input"
               name="service"
-              value={this.state.boarding}
-              onChange={e => this.setState({ boarding: e.target.value })}
             />
-            <label for="boarding" className="form__radio-label">
+            <label htmlFor="boarding" className="form__radio-label">
               <span className="form__radio-button" />
               Dog Boarding
             </label>
@@ -84,13 +60,11 @@ class BookingOne extends React.Component {
           <div className="form__radio-group">
             <input
               type="radio"
-              id="checkin"
+              id="pet_checkin"
               className="form__radio-input"
               name="service"
-              value={this.state.checkin}
-              onChange={e => this.setState({ checkin: e.target.value })}
             />
-            <label for="checkin" className="form__radio-label">
+            <label htmlFor="checkin" className="form__radio-label">
               <span className="form__radio-button" />
               Pet Check-in
             </label>
@@ -98,21 +72,12 @@ class BookingOne extends React.Component {
         </div>
 
         <div className="form__group">
-          <label for="message">Message</label>
-          <textarea
-            className="form-control"
-            id="message"
-            rows="3"
-            className="form__textarea"
-            onChange={e => this.setState({ message: e.target.value })}
-          />
+          <label htmlFor="message">Message</label>
+          <textarea className="form_textarea" id="message" rows="3" />
         </div>
 
         <div className="form__group">
-          <button
-            className="btn btn--orange btn--small"
-            onClick={e => this.handleFormSubmit(e)}
-          >
+          <button className="btn btn--orange btn--small">
             {" "}
             Submit &rarr;{" "}
           </button>
