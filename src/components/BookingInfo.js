@@ -11,8 +11,9 @@ class BookingInfo extends React.Component {
             <form
               action="index.php"
               className="form"
-              name="contactForm"
-              method="post"
+              name="contact"
+              method="POST"
+              data-netlify="true"
             >
               <div className=" u-margin-bottom-medium">
                 <h2 className="heading-secondary">Contact Us</h2>
