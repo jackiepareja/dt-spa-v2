@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 import Logo from "../res/img/logo.png";
 
@@ -16,25 +17,24 @@ class Footer extends React.Component {
               <div className="footer__navigation">
                 <ul className="footer__list">
                   <li className="footer__item">
-                    <a href="/" className="footer__link">
+                    <a href="#aboutCompany" className="footer__link">
                       Company
                     </a>
                   </li>
                   <li className="footer__item">
-                    <a href="/" className="footer__link">
+                    <a href="#bookNow" className="footer__link">
                       Contact Us
                     </a>
                   </li>
                   <li className="footer__item">
-                    <a href="/" className="footer__link">
+                    <a
+                      href="mailto:pareja.jackie@gmail.com"
+                      className="footer__link"
+                    >
                       Careers
                     </a>
                   </li>
-                  <li className="footer__item">
-                    <a href="/" className="footer__link">
-                      Privacy Policy
-                    </a>
-                  </li>
+
                   <li className="footer__item">
                     <a href="/" className="footer__link">
                       Terms
