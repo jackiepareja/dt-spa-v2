@@ -34,7 +34,7 @@ class BookingOne extends React.Component {
           <div className="form__radio-group">
             <input
               type="radio"
-              id="dog_walk"
+              id="walk"
               className="form__radio-input"
               name="service"
             />
@@ -47,7 +47,7 @@ class BookingOne extends React.Component {
           <div className="form__radio-group">
             <input
               type="radio"
-              id="dog_boarding"
+              id="boarding"
               className="form__radio-input"
               name="service"
             />
@@ -60,7 +60,7 @@ class BookingOne extends React.Component {
           <div className="form__radio-group">
             <input
               type="radio"
-              id="pet_checkin"
+              id="checkin"
               className="form__radio-input"
               name="service"
             />
