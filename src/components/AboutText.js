@@ -12,7 +12,7 @@ class AboutText extends React.Component {
             Life gets busy, so we aim to make sure that your doggie's schedule
             is packed with fun walks and adventures. From private and relaxed
             walks, to adventurous social group walks, you can live through your
-            dog's walks vivaciously!
+            dog's walks vicariously!
           </p>
 
           <h3 className="heading-tertiary u-margin-bottom-small">Our Story</h3>
