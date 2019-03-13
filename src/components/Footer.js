@@ -74,15 +74,7 @@ class Footer extends React.Component {
             </div>
             <div className="row container u-margin-center">
               <div className="col-sm-12 u-text-align-center">
-                <p className="footer__item u-margin-top-big">
-                  Built by{" "}
-                  <a
-                    href="http://www.jackiepareja.com"
-                    className="footer__link"
-                  >
-                    Jackie Pareja
-                  </a>
-                </p>
+                
               </div>
             </div>
           </footer>
