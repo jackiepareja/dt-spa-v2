@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 
 import "../sass/index.scss";
 
-class CTA extends React.Component {
+class CTA extends Component {
   render() {
     return (
       <div className="CTA">

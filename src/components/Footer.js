@@ -1,44 +1,61 @@
-import React from "react";
+import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 import Logo from "../res/img/logo.png";
 import Gerardo from "../res/img/gerardo.jpg";
 
-class Footer extends React.Component {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faMobile } from '@fortawesome/free-solid-svg-icons';
+
+
+class Footer extends Component {
+
   render() {
     return (
       <div className="Footer">
         <ScrollableAnchor id="checkFooter">
           <footer className="footer">
-            <div className="footer__logo-box">
-              <img src={Logo} alt="Full logo" className="footer__logo" />
-            </div>
+
 
             <div className="row container u-margin-center">
               <div className="col-sm-6">
+
                 <div className="footer__navigation">
+                <div className="footer__logo-box">
+                  <img src={Logo} alt="Full logo" className="footer__logo" />
+                </div>
                   <ul className="footer__list">
                     <li className="footer__item">
-                      <a href="#aboutCompany" className="footer__link">
-                        Company
+                      <a href="https://www.instagram.com/dogtalespetservices/?hl=en" className="footer__link">
+                        <FontAwesomeIcon icon={faInstagram} />
                       </a>
                     </li>
                     <li className="footer__item">
-                      <a href="#bookNow" className="footer__link">
-                        Contact Us
+                      <a href="https://www.facebook.com/DogTalesPetServices/" className="footer__link">
+                        <FontAwesomeIcon icon={faFacebook} />
                       </a>
                     </li>
                     <li className="footer__item">
                       <a
-                        href="mailto:pareja.jackie@gmail.com"
+                        href="ruff@dogtalespack.com"
                         className="footer__link"
                       >
-                        Careers
+                        <FontAwesomeIcon icon={faEnvelope} />
                       </a>
                     </li>
 
                     <li className="footer__item">
-                      <a href="/" className="footer__link">
-                        Terms
+                      <a href="https://jackiepareja.com" className="footer__link">
+                          <FontAwesomeIcon icon={faCode} />
+                      </a>
+                    </li>
+
+                    <li className="footer__item">
+                      <a href="tel:4153771722" className="footer__link">
+                          <FontAwesomeIcon icon={faMobile} />
                       </a>
                     </li>
                   </ul>
@@ -46,35 +63,23 @@ class Footer extends React.Component {
               </div>
               <div className="col-sm-6">
                 <div className="footer__copyright">
+                  <div className="row container"><img
+                    className="gerardo-image"
+                    src={Gerardo}
+                    alt="Gerardo Vinces"
+                  /></div>
                   <div className="row container">
-                    <div className="col-sm-6">
-                      Interested in learning more about Dog Tales or Joining our
-                      pack? You can contact us at{" "}
-                      <a
-                        className="footer__link"
-                        href="mailto:ruff@dogtalespack"
-                      >
-                        ruff@dogtalespack
-                      </a>{" "}
-                      or at
-                      <a className="footer__link" href="4153609011">
-                        &nbsp; 415-360-9011
-                      </a>
-                    </div>
-                    <div className="col-sm-6">
-                      <img
-                        className="gerardo-image"
-                        src={Gerardo}
-                        alt="Gerardo Vinces"
-                      />
-                    </div>
+                  Gerardo Vinces co-founded Dog Tales in 2017. He has a degree in Biology from SFSU
+                  and was part of the US Navy after finishing Nuclear Power School. He currently lives
+                  in Pacifica, CA with his fiance and two black labradors, Sora &amp; Autumn.
+
                   </div>
                 </div>
               </div>
             </div>
             <div className="row container u-margin-center">
               <div className="col-sm-12 u-text-align-center">
-                
+
               </div>
             </div>
           </footer>

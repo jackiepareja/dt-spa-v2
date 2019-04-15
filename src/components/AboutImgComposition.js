@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 
 import dogPic1 from "../res/img/pups/dogPic1.jpg";
 import dogPic2 from "../res/img/pups/dogPic2.jpeg";
 import dogPic3 from "../res/img/pups/dogPic3.jpg";
 
-class AboutImgComposition extends React.Component {
+class AboutImgComposition extends Component {
   render() {
     return (
       <div className="AboutImgComposition">

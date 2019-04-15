@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 import ServiceCard from "./ServiceCard";
 
@@ -6,7 +6,7 @@ import DogWalk from "../res/img/pups/dog-walk.jpeg";
 import DogBoarding from "../res/img/pups/dog-boarding.jpg";
 import PetCheckIn from "../res/img/pups/pet-checkin.jpeg";
 
-class Services extends React.Component {
+class Services extends Component {
   render() {
     return (
       <div className="Services">

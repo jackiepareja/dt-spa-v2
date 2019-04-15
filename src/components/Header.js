@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 
 import CTA from "./CTA";
 import "../sass/index.scss";
 
 import Logo from "../res/img/logo.png";
 
-class Header extends React.Component {
+class Header extends Component {
   render() {
     return (
       <div className="Header">

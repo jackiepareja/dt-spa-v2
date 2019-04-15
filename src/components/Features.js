@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 
 import FeatureBox from "./FeatureBox";
 
-class Features extends React.Component {
+class Features extends Component {
   render() {
     return (
       <div className="Features">

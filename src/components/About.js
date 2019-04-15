@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import AboutText from "./AboutText";
 import ScrollableAnchor from "react-scrollable-anchor";
 import AboutImgComposition from "./AboutImgComposition";
 
-class About extends React.Component {
+class About extends Component {
   render() {
     return (
       <div className="About">

@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
-import BookingInfo from "./BookingInfo";
+import Form from './Form';
 
-class Booking extends React.Component {
+
+class Booking extends Component {
   render() {
     return (
       <div className="Booking">
         <ScrollableAnchor id="bookNow">
           <section className="section-book">
             <div className="row container book-row">
-              <BookingInfo />
+              <Form />
             </div>
           </section>
         </ScrollableAnchor>
