@@ -25,7 +25,7 @@ class AboutText extends Component {
             enjoyable and within your doggie's routine.
           </p>
 
-          <a href="#bookNow" className="btn-text">
+          <a href="#book" className="btn-text">
             Learn More &rarr;
           </a>
         </div>

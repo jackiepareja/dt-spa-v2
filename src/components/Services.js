@@ -10,7 +10,7 @@ class Services extends Component {
   render() {
     return (
       <div className="Services">
-        <ScrollableAnchor id="aboutServices">
+        <ScrollableAnchor id="services">
           <section className="section-services">
             <div className="u-center-text u-margin-bottom-big">
               <h2 className="heading-secondary">Wagging Along the Sidewalks</h2>

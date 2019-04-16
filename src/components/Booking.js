@@ -7,7 +7,7 @@ class Booking extends Component {
   render() {
     return (
       <div className="Booking">
-        <ScrollableAnchor id="bookNow">
+        <ScrollableAnchor id="book">
           <section className="section-book">
             <div className="row container book-row">
               <FormContainer />

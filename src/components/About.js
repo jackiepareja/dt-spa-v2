@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
       <div className="About">
-        <ScrollableAnchor id="aboutCompany">
+        <ScrollableAnchor id="about">
           <main>
             <section className="section-about">
               <div className="u-center-text u-margin-bottom-big">
@@ -17,7 +17,7 @@ class About extends Component {
               <div className="container">
                 <div className="row">
                   <AboutCompany />
-                  
+
                 </div>
               </div>
             </section>

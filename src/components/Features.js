@@ -7,7 +7,7 @@ class Features extends Component {
   render() {
     return (
       <div className="Features">
-        <ScrollableAnchor id="aboutFeatures">
+        <ScrollableAnchor id="benefits">
           <section className="section-features">
             <div className="row container u-margin-center">
               <FeatureBox

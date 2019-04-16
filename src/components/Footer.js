@@ -16,7 +16,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <ScrollableAnchor id="checkFooter">
+        <ScrollableAnchor id="contact">
           <footer className="footer">
 
 
@@ -26,6 +26,7 @@ class Footer extends Component {
                 <div className="footer__navigation">
                 <div className="footer__logo-box">
                   <img src={Logo} alt="Full logo" className="footer__logo" />
+                  <br /> <p>2017-2019. All Rights Reserved.</p>
                 </div>
                   <ul className="footer__list">
                     <li className="footer__item">
@@ -69,9 +70,12 @@ class Footer extends Component {
                     alt="Gerardo Vinces"
                   /></div>
                   <div className="row container">
-                  Gerardo Vinces co-founded Dog Tales in 2017. He has a degree in Biology from SFSU
-                  and was part of the US Navy after finishing Nuclear Power School. He currently lives
-                  in Pacifica, CA with his fiance and two black labradors, Sora &amp; Autumn.
+                  Dog Tales was founded based on how I would want my dog's to be cared for while I was away.
+                  We value our doggy clients and ensure that they're time with us is meaningful.
+                  We hope you enjoy our services!
+                  <br />
+                  -- <a className="footer__gerardo" href="https://www.linkedin.com/in/gvinces/">Gerardo Vinces</a> <br />
+                  Co-founder of Dog Tales
 
                   </div>
                 </div>

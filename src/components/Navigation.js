@@ -21,28 +21,28 @@ class Navigation extends Component {
             <ul className="navigation__list">
 
               <li className="navigation__item">
-                <a href="#aboutCompany" className="navigation__link">
+                <a href="#about" className="navigation__link">
                   About Dog Tales
                 </a>
               </li>
               <li className="navigation__item">
-                <a href="#aboutFeatures" className="navigation__link">
+                <a href="#benefits" className="navigation__link">
                   Dog Tales Benefits
                 </a>
               </li>
               <li className="navigation__item">
-                <a href="#aboutServices" className="navigation__link">
+                <a href="#services" className="navigation__link">
                   Services
                 </a>
               </li>
               <li className="navigation__item">
-                <a href="#bookNow" className="navigation__link">
+                <a href="#book" className="navigation__link">
                   Book Now
                 </a>
               </li>
               <li className="navigation__item">
-                <a href="#checkFooter" className="navigation__link">
-                  Careers
+                <a href="#contact" className="navigation__link">
+                  Contact
                 </a>
               </li>
             </ul>
