@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-
-const API_PATH = '../../api/contact/send_form_email.php';
 
 
 class Form extends Component {
@@ -50,20 +47,6 @@ class Form extends Component {
       message: ''
     });
 
-    axios({
-      method: 'post',
-      url: `${API_PATH}`,
-      headers: { 'content-type': 'application/json' },
-      data: this.state
-    })
-
-    .then(result => {
-      this.setState({
-        mailSent: result.data.sent
-      })
-    })
-
-    .catch(error => this.setState({ error: error.message }));
   };
 
   render() {
