@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import AboutText from "./AboutText";
 import ScrollableAnchor from "react-scrollable-anchor";
-import AboutImgComposition from "./AboutImgComposition";
+
+import AboutCompany from "./AboutCompany";
 
 class About extends Component {
   render() {
@@ -16,8 +16,8 @@ class About extends Component {
 
               <div className="container">
                 <div className="row">
-                  <AboutText />
-                  <AboutImgComposition />
+                  <AboutCompany />
+                  
                 </div>
               </div>
             </section>

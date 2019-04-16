@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
-import Form from './Form';
+import FormContainer from './FormContainer';
 
 
 class Booking extends Component {
@@ -10,7 +10,7 @@ class Booking extends Component {
         <ScrollableAnchor id="bookNow">
           <section className="section-book">
             <div className="row container book-row">
-              <Form />
+              <FormContainer />
             </div>
           </section>
         </ScrollableAnchor>
