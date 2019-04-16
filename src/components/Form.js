@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const API_PATH = '../../api/contact/index.php';
+const API_PATH = '../../api/contact/send_form_email.php';
 
 
 class Form extends Component {
