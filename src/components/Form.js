@@ -68,7 +68,7 @@ class Form extends Component {
 
   render() {
     return (
-      <form>
+      <form name="contactForm" method="post" action="send_form_email.php">
 
       <div className="u-margin-bottom-medium">
         <h2 className="heading-secondary">Contact Us</h2>
