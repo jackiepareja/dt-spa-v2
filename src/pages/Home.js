@@ -15,13 +15,13 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-      <Navigation />
-      <Header />
-      <About />
-      <Features />
-      <Services />
-      <Booking />
-      <Footer />
+        <Navigation />
+        <Header />
+        <About />
+        <Features />
+        <Services />
+        <Booking />
+        <Footer />
       </div>
     );
   }

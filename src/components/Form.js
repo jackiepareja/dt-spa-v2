@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 class Form extends Component {
-  state= {
-    fullName: '',
-    email: '',
-    needsWalking: '',
-    needsBoarding: '',
-    needsCheckin: '',
-    message: ''
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      fullName: '',
+      email: '',
+      needsWalking: '',
+      needsBoarding: '',
+      needsCheckin: '',
+      message: ''
+    };
+  }
+
 
   change = (e) => {
     this.props.onChange({
@@ -47,11 +56,20 @@ class Form extends Component {
       message: ''
     });
 
+    fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({ "form-name": "contact", ...this.state })
+  })
+    .then(() => alert("Success!"))
+    .catch(error => alert(error));
+
+
   };
 
   render() {
     return (
-      <form name="contactForm" method="post" action="send_form_email.php">
+      <form name="contact" netlify-honeypot="bot-field">
 
       <div className="u-margin-bottom-medium">
         <h2 className="heading-secondary">Contact Us</h2>

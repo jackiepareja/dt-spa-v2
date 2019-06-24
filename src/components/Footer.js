@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faMobile } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -26,8 +25,18 @@ class Footer extends Component {
                 <div className="footer__navigation">
                 <div className="footer__logo-box">
                   <img src={Logo} alt="Full logo" className="footer__logo" />
-                  <br /> <p>2017-2019. All Rights Reserved.</p>
+                  <br /> 
                 </div>
+
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="footer__copyright">
+                  <div className="row container">
+
+                    <p>2017-2019. All Rights Reserved.</p>
+                  </div>
+                  <div className="row container">
                   <ul className="footer__list">
                     <li className="footer__item">
                       <a href="https://www.instagram.com/dogtalespetservices/?hl=en" className="footer__link">
@@ -48,11 +57,7 @@ class Footer extends Component {
                       </a>
                     </li>
 
-                    <li className="footer__item">
-                      <a href="https://jackiepareja.com" className="footer__link">
-                          <FontAwesomeIcon icon={faCode} />
-                      </a>
-                    </li>
+
 
                     <li className="footer__item">
                       <a href="tel:4153771722" className="footer__link">
@@ -60,22 +65,8 @@ class Footer extends Component {
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="footer__copyright">
-                  <div className="row container"><img
-                    className="gerardo-image"
-                    src={Gerardo}
-                    alt="Gerardo Vinces"
-                  /></div>
-                  <div className="row container">
-                  Dog Tales was founded based on how I would want my dog's to be cared for while I was away.
-                  We value our doggy clients and ensure that they're time with us is meaningful.
-                  We hope you enjoy our services!
                   <br />
-                  -- <a className="footer__gerardo" href="https://www.linkedin.com/in/gvinces/">Gerardo Vinces</a> <br />
-                  Co-founder of Dog Tales
+
 
                   </div>
                 </div>
