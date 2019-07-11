@@ -20,10 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "node-sass src/sass/index.scss src/res/styles/css/style.css -w",
-    "compile:sass": "node-sass src/sass/index.scss src/res/styles/css/style.comp.css",
-    "compress:css": "node-sass src/res/styles/css/style.comp.css src/res/styles/css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass compress:css"
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,7 +35,8 @@
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
     "npm-run-all": "^4.1.5",
     "post-cli": "^1.0.5",
     "postcss-cli": "^6.1.2",
