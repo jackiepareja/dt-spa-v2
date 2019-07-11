@@ -16,10 +16,12 @@ class Header extends Component {
 
           <div className="header__text-box">
             <h1 className="heading-primary">
+            <span className="heading-primary--sub">
+              A Dog's Life Happens
+            </span>
+            
               <span className="heading-primary--main">Outdoors </span>
-              <span className="heading-primary--sub">
-                is where a dog's life happens
-              </span>
+
             </h1>
 
             <CTA />
