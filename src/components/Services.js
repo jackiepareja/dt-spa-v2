@@ -39,9 +39,11 @@ class Services extends Component {
                   serviceInfo3="Short walks"
                   priceValue="$20"
                 />
+
+
               </div>
               <div className="services__cta u-margin-center u-margin-top-big">
-                <a href="#bookNow" className="btn btn--orange btn--large">
+                <a href="#book" className="btn btn--orange btn--large">
                   Book Now!
                 </a>
               </div>

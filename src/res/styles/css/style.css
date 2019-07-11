@@ -622,9 +622,9 @@ body {
     list-style: none;
     text-align: center; }
   .footer__item {
-    display: inline-block; }
-    .footer__item:not(:last-child) {
-      margin-right: 1.5rem; }
+    display: block; }
+    .footer__item-text {
+      font-size: 1.5rem; }
   .footer__link, .footer__gerardo {
     font-size: 2rem; }
     .footer__link:link, .footer__link:visited, .footer__gerardo:link, .footer__gerardo:visited {

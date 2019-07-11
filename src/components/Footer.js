@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 import Logo from "../res/img/logo.png";
-import Gerardo from "../res/img/gerardo.jpg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -25,7 +24,7 @@ class Footer extends Component {
                 <div className="footer__navigation">
                 <div className="footer__logo-box">
                   <img src={Logo} alt="Full logo" className="footer__logo" />
-                  <br /> 
+                  <br />
                 </div>
 
                 </div>
@@ -38,32 +37,34 @@ class Footer extends Component {
                   </div>
                   <div className="row container">
                   <ul className="footer__list">
+                  <li className="footer__item">
+                    <a
+                      href="ruff@dogtalespack.com"
+                      className="footer__link"
+                    >
+                    <span className="footer__item-text">ruff@dogtalespack.com </span>
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </a>
+                  </li>
+
+
+
+                  <li className="footer__item">
+                    <a href="tel:4153771722" className="footer__link">
+                        <span className="footer__item-text">415-360-9011</span> <FontAwesomeIcon icon={faMobile} />
+                    </a>
+                  </li>
                     <li className="footer__item">
                       <a href="https://www.instagram.com/dogtalespetservices/?hl=en" className="footer__link">
-                        <FontAwesomeIcon icon={faInstagram} />
+                         <span className="footer__item-text">Follow us </span> <FontAwesomeIcon icon={faInstagram} />
                       </a>
                     </li>
                     <li className="footer__item">
                       <a href="https://www.facebook.com/DogTalesPetServices/" className="footer__link">
-                        <FontAwesomeIcon icon={faFacebook} />
-                      </a>
-                    </li>
-                    <li className="footer__item">
-                      <a
-                        href="ruff@dogtalespack.com"
-                        className="footer__link"
-                      >
-                        <FontAwesomeIcon icon={faEnvelope} />
+                        <span className="footer__item-text">Like us </span> <FontAwesomeIcon icon={faFacebook} />
                       </a>
                     </li>
 
-
-
-                    <li className="footer__item">
-                      <a href="tel:4153771722" className="footer__link">
-                          <FontAwesomeIcon icon={faMobile} />
-                      </a>
-                    </li>
                   </ul>
                   <br />
 
