@@ -20,14 +20,10 @@ class Navigation extends Component {
           <nav className="navigation__nav">
             <ul className="navigation__list">
 
-              <li className="navigation__item">
-                <a href="#about" className="navigation__link">
+              <li htmlFor="navi-toggle" className="navigation__item">
+
+                <a href="#about" className="navigation__link nav_close">
                   About Dog Tales
-                </a>
-              </li>
-              <li className="navigation__item">
-                <a href="#benefits" className="navigation__link">
-                  Dog Tales Benefits
                 </a>
               </li>
               <li className="navigation__item">

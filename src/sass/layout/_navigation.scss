@@ -1,4 +1,6 @@
 .navigation {
+  display: none;
+
   &__checkbox {
     display: none;
   }
@@ -112,6 +114,7 @@
   }
 
   //FUNCTIONALITY
+  
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
