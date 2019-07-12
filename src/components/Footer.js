@@ -50,7 +50,7 @@ class Footer extends Component {
 
 
                   <li className="footer__item">
-                    <a href="tel:4153771722" className="footer__link">
+                    <a href="tel:4153609011" className="footer__link">
                         <span className="footer__item-text">415-360-9011</span> <FontAwesomeIcon icon={faMobile} />
                     </a>
                   </li>
