@@ -39,7 +39,7 @@ class Footer extends Component {
                   <ul className="footer__list">
                   <li className="footer__item">
                     <a
-                      href="ruff@dogtalespack.com"
+                      href="mailto:ruff@dogtalespack.com"
                       className="footer__link"
                     >
                     <span className="footer__item-text">ruff@dogtalespack.com </span>
