@@ -1,0 +1,26 @@
+.carousel_wrapper {
+  position: relative;
+
+  .carousel_buttons--back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+    color: #eee;
+  }
+
+  .carousel_buttons--next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+    color: #eee;
+  }
+
+}

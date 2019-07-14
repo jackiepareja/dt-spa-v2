@@ -1,0 +1,69 @@
+.Promo {
+  position: relative;
+  width: 100%;
+
+  &_img {
+
+    &--XL {
+      display: block;
+      width: 100%;
+    }
+
+    &--S {
+      display: none;
+      width: 100%;
+    }
+
+    @include respond(phone) {
+        &--XL {
+          display: none;
+        }
+        &--S {
+          display: block;
+        }
+    }
+  }
+}
+
+.promo_headline {
+  font-size: 2rem;
+}
+
+.border {
+  border: 1px dashed #718EB9;
+  margin-bottom: 3rem;
+}
+
+.modal_container {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 998;
+  width: 100%;
+  cursor: pointer;
+}
+
+.modal_size {
+  width: 49%;
+}
+
+.close_btn {
+  width: 10%;
+  height: 22%;
+  background-color: transparent;
+  color: #718EB9;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: -2%;
+  font-size: 3rem;
+
+  @include respond(phone) {
+    top: -3%;
+    right: 5%;
+    font-size: 3rem;
+  }
+
+
+}

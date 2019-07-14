@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import ScrollableAnchor from "react-scrollable-anchor";
 import ServiceCard from "./ServiceCard";
 
-import DogWalk from "../res/img/pups/dog-walk.jpeg";
+import FieldTrip from "../res/img/pups/dog-walk.jpeg";
 import DogBoarding from "../res/img/pups/dog-boarding.jpg";
-import PetCheckIn from "../res/img/pups/pet-checkin.jpeg";
+import DogWalk from "../res/img/pups/pet-checkin.jpeg";
 
 class Services extends Component {
   render() {
@@ -21,7 +21,9 @@ class Services extends Component {
                   serviceInfo1="30m to 1h"
                   serviceInfo2="Private walks*"
                   serviceInfo3="Group walks*"
-                  priceValue="$25"
+                  priceValue1="Solo/On-demand -- $25hr"
+                  priceValue2="Group Walk* -- $22hr"
+                  priceValue3="Half Hour Walk -- $20hr"
                 />
                 <ServiceCard
                   background={DogBoarding}
@@ -29,15 +31,20 @@ class Services extends Component {
                   serviceInfo1="4-hour Interval potty breaks"
                   serviceInfo2="Sleep in a cozy dog bed"
                   serviceInfo3="Great doggy &amp; human company"
-                  priceValue="$60"
+                  priceValue1="Weekend Boarding -- $60/night"
+                  priceValue2="7 nights -- $55/night"
+                  priceValue3="14 nights or more -- $50/night"
                 />
                 <ServiceCard
-                  background={PetCheckIn}
-                  serviceTitle="Pet Check-In"
-                  serviceInfo1="15m Check-ins"
-                  serviceInfo2="Potty breaks"
-                  serviceInfo3="Short walks"
-                  priceValue="$20"
+                  background={FieldTrip}
+                  serviceTitle="Field Trips & More"
+                  serviceInfo1="4h Field Days"
+                  serviceInfo2="One & Two way Cab Service"
+                  serviceInfo3="Pet Sitting"
+                  priceValue1="4h Field Day -- $60hr"
+                  priceValue2="Cab Service One Way -- $25"
+                  priceValue3="Cab Service Two Way -- $45"
+                  priceValue4="4h Sitting -- $40/visit"
                 />
 
 

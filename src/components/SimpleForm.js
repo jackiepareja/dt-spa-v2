@@ -67,14 +67,14 @@ class SimpleForm extends Component {
 
             <div className="form__radio-group">
               <input
-              id="checkin"
+              id="misc"
                 type="checkbox"
                 className="form__radio-input"
-                name="needsCheckin"
+                name="needsMisc"
               />
               <label htmlFor="checkin" className="form__radio-label">
                 <span className="form__radio-button" />
-                Pet Check-in
+                Misc
               </label>
             </div>
 

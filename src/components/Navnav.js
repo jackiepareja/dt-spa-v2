@@ -1,15 +1,19 @@
 import React, { Component} from "react";
-import Navigation from "./Navigation";
+
+
+
 
 class Navnav extends Component {
 
   render() {
-    const pages = ['about', 'services', 'book', 'contact'];
-    const navLinks = pages.map(page => {
+
+
+    const sections = ['about', 'services', 'book'];
+    const sectionLinks = sections.map(section => {
       return (
 
             <li className="navnav__item">
-              <a className="navnav__item---link" href={'#' + page} >{page}</a>
+              <a className="navnav__item---link" href={'#' + section} >{section}</a>
             </li>
 
 
@@ -19,7 +23,7 @@ class Navnav extends Component {
 
     return (<nav>
         <ul className="Navnav_wrapper">
-          {navLinks}
+          {sectionLinks}
         </ul>
 
     </nav>

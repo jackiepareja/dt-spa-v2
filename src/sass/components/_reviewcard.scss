@@ -1,0 +1,46 @@
+.Reviews {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(110, 141, 183, 0.7),
+      rgba(179, 195, 216, 0.7)
+    ),
+    url(../res/img/dog_reviews.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  height: 70vh;
+  padding: 7rem 0;
+
+  @include respond(phone) {
+    height: 120vh;
+  }
+}
+
+
+
+.ReviewCard {
+
+  &__container {
+    margin-bottom: 5rem;
+  }
+
+  &__name,
+  &__service,
+  &__highlights,
+  &__text {
+    color: #eee;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__stars {
+    font-size: 2rem;
+
+    &-star {
+      color: #FABE12;
+    }
+
+  }
+}

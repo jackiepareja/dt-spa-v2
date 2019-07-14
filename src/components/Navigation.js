@@ -36,11 +36,8 @@ class Navigation extends Component {
                   Book Now
                 </a>
               </li>
-              <li className="navigation__item">
-                <a href="#contact" className="navigation__link">
-                  Contact
-                </a>
-              </li>
+              
+
             </ul>
           </nav>
         </div>

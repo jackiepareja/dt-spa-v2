@@ -24,8 +24,8 @@
     }
 
     @include respond(phone) {
-      top: 3rem;
-      right: 3rem;
+      top: 20rem;
+      right: 1rem;
     }
   }
 
@@ -49,8 +49,8 @@
     }
 
     @include respond(phone) {
-      top: 3.5rem;
-      right: 3.5rem;
+      top: 20.5rem;
+      right: 1.5rem;
     }
   }
 
@@ -114,7 +114,7 @@
   }
 
   //FUNCTIONALITY
-  
+
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }

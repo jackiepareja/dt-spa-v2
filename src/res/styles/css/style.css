@@ -55,6 +55,9 @@ body {
     body {
       padding: 0; } }
 
+li {
+  list-style: none; }
+
 .Home {
   position: relative; }
 
@@ -295,7 +298,7 @@ body {
   position: absolute;
   top: 12rem;
   right: 2rem;
-  width: 75%; }
+  width: 95%; }
 
 .card__heading-span {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
@@ -323,7 +326,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 80%; }
 
 .card__price-box {
   text-align: center;
@@ -331,11 +335,11 @@ body {
   color: #fff; }
 
 .card__price-only {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-transform: uppercase; }
 
 .card__price-value {
-  font-size: 6rem;
+  font-size: 1.5rem;
   font-weight: 100; }
 
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
@@ -382,6 +386,27 @@ body {
 @media only screen and (max-width: 37.5em) {
   .ServiceCard .col-sm-4 {
     width: 100%; } }
+
+.carousel_wrapper {
+  position: relative; }
+  .carousel_wrapper .carousel_buttons--back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+    color: #eee; }
+  .carousel_wrapper .carousel_buttons--next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 3rem;
+    color: #eee; }
 
 .composition {
   position: relative; }
@@ -596,6 +621,31 @@ body {
     opacity: 0;
     transition: opacity 0.2s; }
 
+.Reviews {
+  background-image: linear-gradient(to right bottom, rgba(110, 141, 183, 0.7), rgba(179, 195, 216, 0.7)), url(../res/img/dog_reviews.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  height: 70vh;
+  padding: 7rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .Reviews {
+      height: 120vh; } }
+
+.ReviewCard__container {
+  margin-bottom: 5rem; }
+
+.ReviewCard__name, .ReviewCard__service, .ReviewCard__highlights, .ReviewCard__text {
+  color: #eee; }
+
+.ReviewCard__text {
+  font-size: 2rem; }
+
+.ReviewCard__stars {
+  font-size: 2rem; }
+  .ReviewCard__stars-star {
+    color: #FABE12; }
+
 .footer {
   background-color: #333;
   padding: 10rem 0;
@@ -614,8 +664,6 @@ body {
     width: 15rem;
     height: auto; }
   .footer__navigation {
-    border-top: 1px solid #777;
-    padding-top: 2rem;
     display: inline-block; }
     @media only screen and (max-width: 56.25em) {
       .footer__navigation {
@@ -641,34 +689,33 @@ body {
       color: #ff8328;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
       transform: rotate(5deg) scale(1.3); }
-  .footer__gerardo {
-    font-size: 1.4rem; }
-  .footer__copyright {
-    border-top: 1px solid #777;
-    padding-top: 2rem;
-    width: 80%;
-    float: right; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__copyright {
-        width: 100%;
-        float: none; } }
-    .footer__copyright .row {
+  @media only screen and (max-width: 56.25em) {
+    .footer__copyright {
       width: 100%;
-      margin: 0 auto;
+      float: none; } }
+  .footer__copyright .row {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .footer__copyright .row .gerardo-image {
+      width: 50%;
+      border-radius: 100%;
+      margin: auto;
+      padding-bottom: 2rem; }
+    .footer__copyright .row .col-sm-4 {
+      width: 33%;
+      border-radius: 50%;
+      margin: auto;
       text-align: center; }
-      .footer__copyright .row .gerardo-image {
-        width: 50%;
-        border-radius: 100%;
-        margin: auto;
-        padding-bottom: 2rem; }
-      .footer__copyright .row .col-sm-6 {
-        width: 50%;
-        border-radius: 50%;
-        margin: auto; }
-        @media only screen and (max-width: 37.5em) {
-          .footer__copyright .row .col-sm-6 {
-            width: 100%;
-            padding-bottom: 3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__copyright .row .col-sm-4 {
+          width: 100%;
+          padding-bottom: 3rem; } }
+
+.footer-top-border {
+  border-top: 1px solid #777;
+  padding-top: 2rem;
+  width: 80%; }
 
 .header {
   height: 95vh;
@@ -723,8 +770,8 @@ body {
         right: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__button {
-        top: 3rem;
-        right: 3rem; } }
+        top: 20rem;
+        right: 1rem; } }
   .navigation__background {
     height: 6rem;
     width: 6rem;
@@ -741,8 +788,8 @@ body {
         right: 4.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__background {
-        top: 3.5rem;
-        right: 3.5rem; } }
+        top: 20.5rem;
+        right: 1.5rem; } }
   .navigation__nav {
     height: 100vh;
     position: fixed;
@@ -818,7 +865,7 @@ body {
 .Navnav_wrapper {
   text-align: right;
   position: absolute;
-  top: 1%;
+  top: 3%;
   right: 1.5%;
   z-index: 999; }
   .Navnav_wrapper .navnav__item {
@@ -841,6 +888,56 @@ body {
       background-position: 100%;
       color: #ff8328;
       transform: translate(1rem); }
+
+.Promo {
+  position: relative;
+  width: 100%; }
+  .Promo_img--XL {
+    display: block;
+    width: 100%; }
+  .Promo_img--S {
+    display: none;
+    width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .Promo_img--XL {
+      display: none; }
+    .Promo_img--S {
+      display: block; } }
+
+.promo_headline {
+  font-size: 2rem; }
+
+.border {
+  border: 1px dashed #718EB9;
+  margin-bottom: 3rem; }
+
+.modal_container {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 998;
+  width: 100%;
+  cursor: pointer; }
+
+.modal_size {
+  width: 49%; }
+
+.close_btn {
+  width: 10%;
+  height: 22%;
+  background-color: transparent;
+  color: #718EB9;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: -2%;
+  font-size: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .close_btn {
+      top: -3%;
+      right: 5%;
+      font-size: 3rem; } }
 
 .Navigation {
   display: none; }

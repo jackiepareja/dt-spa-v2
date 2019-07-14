@@ -29,7 +29,10 @@ const ServiceCard = props => {
             <div className="card__cta">
               <div className="card__price-box">
                 <p className="card__price-only">Starting at</p>
-                <p className="card__price-value">{props.priceValue}</p>
+                <p className="card__price-value">{props.priceValue1}</p>
+                <p className="card__price-value">{props.priceValue2}</p>
+                <p className="card__price-value">{props.priceValue3}</p>
+                <p className="card__price-value">{props.priceValue4}</p>
                 <a href="#book" className="btn btn--white btn--large">
                   Book now!
                 </a>
