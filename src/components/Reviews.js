@@ -10,7 +10,7 @@ import ReviewCard from "./ReviewCard";
 class Reviews extends Component {
   render() {
     return (
-      <div className="Reviews">
+      <div id="reviews" className="Reviews">
         <section className="section-reviews">
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-primary">Read What Our Clients Say</h2>

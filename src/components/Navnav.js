@@ -8,7 +8,7 @@ class Navnav extends Component {
   render() {
 
 
-    const sections = ['about', 'services', 'book'];
+    const sections = ['about', 'services', 'book', 'reviews'];
     const sectionLinks = sections.map(section => {
       return (
 
