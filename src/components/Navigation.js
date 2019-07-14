@@ -1,9 +1,31 @@
 import React, { Component } from "react";
 
 class Navigation extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {isToggleOn: true};
+  //
+  //   this.exitClick = this.exitClick.bind(this);
+  // }
+  //
+  // exitClick() {
+  //   this.setState(state => ({
+  //     isToggleOn: !state.isToggleOn
+  //
+  //   }));
+  // }
+
+
+
+
+
 
   render() {
+  // this.state.isToggleOn ? navBG.classList.add('hideNav') : navBG.classList.remove('hideNav');
+
+
     return (
+
       <div className="Navigation">
         <input
           type="checkbox"
@@ -15,12 +37,13 @@ class Navigation extends Component {
           <span className="navigation__icon"> &nbsp; </span>
         </label>
 
-        <div className="navigation__background">&nbsp;</div>
+        <div id="navBG" className="navigation__background">&nbsp;</div>
 
           <nav className="navigation__nav">
             <ul className="navigation__list">
 
               <li htmlFor="navi-toggle" className="navigation__item">
+
 
                 <a href="#about" className="navigation__link nav_close">
                   About Dog Tales
@@ -36,7 +59,7 @@ class Navigation extends Component {
                   Book Now
                 </a>
               </li>
-              
+
 
             </ul>
           </nav>
