@@ -4,7 +4,7 @@ import Accordion from './Accordion';
 
 function Accordions() {
   return (
-    <div className="MainAccordion">
+    <div id="policy" className="MainAccordion">
       <h1 className="Accordions">Policy &amp; FAQs</h1>
       <Accordion allowMultipleOpen>
         <div label='Doggie Duties &amp; Requirements:' isOpen>

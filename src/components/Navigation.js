@@ -1,27 +1,8 @@
 import React, { Component } from "react";
 
 class Navigation extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {isToggleOn: true};
-  //
-  //   this.exitClick = this.exitClick.bind(this);
-  // }
-  //
-  // exitClick() {
-  //   this.setState(state => ({
-  //     isToggleOn: !state.isToggleOn
-  //
-  //   }));
-  // }
-
-
-
-
-
 
   render() {
-  // this.state.isToggleOn ? navBG.classList.add('hideNav') : navBG.classList.remove('hideNav');
 
 
     return (
@@ -62,6 +43,11 @@ class Navigation extends Component {
               <li className="navigation__item">
                 <a href="#reviews" className="navigation__link">
                   Reviews
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#policy" className="navigation__link">
+                  Policy
                 </a>
               </li>
 
