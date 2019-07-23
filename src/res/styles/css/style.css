@@ -169,6 +169,22 @@ body {
 .u-text-align-center {
   text-align: center !important; }
 
+.MainAccordion {
+  background-color: #f7f7f7;
+  padding-bottom: 5rem; }
+
+.Accordions {
+  font-size: 3rem;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0; }
+
+.badges {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;

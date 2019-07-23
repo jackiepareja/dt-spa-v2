@@ -6,6 +6,7 @@ import "../res/styles/icon-font.css";
 import Promo from "../components/Promo";
 import Navigation from "../components/Navigation";
 import Navnav from "../components/Navnav";
+import PolicyContent from "../components/PolicyContent";
 import Footer from "../components/Footer";
 
 class Policy extends Component {
@@ -15,6 +16,7 @@ class Policy extends Component {
         <Promo />
         <Navnav />
         <Navigation />
+        <PolicyContent />
         <Footer />
       </div>
     );

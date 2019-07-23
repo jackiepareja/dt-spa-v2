@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+// import { seventeen } from '../res/img/2017.png';
+// import { eighteen } from '../res/img/2018.png';
+// import { nineteen } from '../res/img/2019.png';
 
 import ReviewCard from "./ReviewCard";
 
@@ -150,6 +155,8 @@ class Reviews extends Component {
             </div>
 
           </div>
+
+        
 
         </section>
 

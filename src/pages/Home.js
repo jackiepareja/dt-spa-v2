@@ -12,6 +12,7 @@ import Features from "../components/Features";
 import Services from "../components/Services";
 import Reviews from "../components/Reviews";
 import Booking from "../components/Booking";
+import Accordions from "../components/Accordions";
 import Footer from "../components/Footer";
 
 class Home extends Component {
@@ -27,6 +28,7 @@ class Home extends Component {
         <Services />
         <Reviews />
         <Booking />
+        <Accordions />
         <Footer />
       </div>
     );
