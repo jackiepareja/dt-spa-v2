@@ -38,10 +38,10 @@ class Services extends Component {
                 <ServiceCard
                   background={FieldTrip}
                   serviceTitle="Field Trips & More"
-                  serviceInfo1="4h Field Days"
+                  serviceInfo1="4h Field Trip"
                   serviceInfo2="One & Two way Cab Service"
                   serviceInfo3="Pet Sitting"
-                  priceValue1="4h Field Day -- $60hr"
+                  priceValue1="4h Field Trip -- $60hr (upon availability)"
                   priceValue2="Cab Service One Way -- $25"
                   priceValue3="Cab Service Two Way -- $45"
                   priceValue4="4h Sitting -- $40/visit"

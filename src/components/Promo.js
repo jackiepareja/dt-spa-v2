@@ -69,7 +69,7 @@ class Promo extends Component {
           <h2 className="promo_headline" ref={subtitle => this.subtitle = subtitle}>Promo Details</h2>
           <div className="border"></div>
           <button className="close_btn" onClick={this.closeModal}>&times;</button>
-          <div>Free weekend boarding: Valid only to first-time boarders. Limit to 2 nights over a weekend. Minimum weekly walks signup required. Expires on 8/31/19.
+          <div>Free weekend boarding: Valid only to first-time clients. Limit to 2 nights over a weekend. Minimum weekly walks signup required. Expires on 8/31/19.
           Contact us for more details.</div>
 
         </Modal>

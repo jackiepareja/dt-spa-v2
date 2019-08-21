@@ -27,7 +27,7 @@ class PolicyContent extends Component {
   render() {
     return (
       <div className="PolicyContent">
-        <button className="accordion">About Clients</button>
+        <button className="accordion">About Clients:</button>
         <div className="panel">
           <ul>
             <li>Puppies need to be at least 7 months old to be part of the Dog Tales Pack.</li>

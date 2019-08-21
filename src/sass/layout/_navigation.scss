@@ -121,6 +121,7 @@
     transform: scale(80);
   }
 
+
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
@@ -182,4 +183,10 @@
 
 .hideNav {
   visibility: hidden;
+}
+
+.navigation_checkbox--li {
+  border:3px solid blue;
+  height: 5rem;
+  width: 10rem;
 }

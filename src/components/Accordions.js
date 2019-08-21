@@ -19,17 +19,17 @@ function Accordions() {
         <div label='Holiday Rates:'>
           <p>&bull; Boarding and walks booked on holidays are 2x the hourly or nightly rate.</p>
         </div>
-        <div label='Boarding Policy'>
+        <div label='Boarding Policy:'>
           <p>&bull; Clients need to provide sufficient dog food for the entire boarding duration.</p>
-          <p>&bull; Clients will be picked up and dropped off during our hours of operation.</p>
+          <p>&bull; Doggies will be picked up and dropped off during our hours of operation.</p>
         </div>
-        <div label='Billing Policy'>
+        <div label='Billing Policy:'>
           <p>&bull; Invoices are sent on a weekly basis and are due upon receipt.</p>
           <p>&bull; Late fees will be applied for overdue invoices after a 3-day grace period.</p>
           <p>&bull; Service will be interrupted for unpaid invoices past 7 days from due date.</p>
         </div>
-        <div label='Cancellation Policy'>
-          <p>&bull; No fees or additional cost will be applied for cancellations but a 24 hour notice is always appreciated</p>
+        <div label='Cancellation Policy:'>
+          <p>&bull; No fees or additional cost will be applied for cancellations but a 24 hour notice is always appreciated.</p>
         </div>
       </Accordion>
     </div>

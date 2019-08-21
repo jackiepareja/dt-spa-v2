@@ -883,6 +883,11 @@ body {
 .hideNav {
   visibility: hidden; }
 
+.navigation_checkbox--li {
+  border: 3px solid blue;
+  height: 5rem;
+  width: 10rem; }
+
 .Navnav_wrapper {
   text-align: right;
   position: absolute;
