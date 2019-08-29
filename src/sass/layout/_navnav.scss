@@ -1,7 +1,7 @@
   .Navnav_wrapper {
     text-align: right;
     position: absolute;
-    top: 3%;
+    top: 1%;
     right: 1.5%;
     z-index: 999;
 
@@ -42,4 +42,10 @@
     }
 
 
+  }
+
+  .horizontalSlider___281Ls {
+    @media screen and (min-width: 400px) and (max-width: 500px) {
+      min-height: 62rem;
+    }
   }

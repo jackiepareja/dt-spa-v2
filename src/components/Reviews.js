@@ -33,7 +33,7 @@ class Reviews extends Component {
                   highlight1="Friendly &bull;"
                   highlight2="Punctual &bull;"
                   highlight3="Easy to communicate"
-                  reviewText="The experience with Gerardo and his team have been great so far! They did their first walk with our bichon/poodle mix and very accommodating to her needs (older dog with a back that acts up sometimes). They're very friendly, punctual, and easy to communicate with. We have our next walk set up in a couple days and plan to use them 1-2 times a week. Would highly recommend!"/>
+                  reviewText="The experience with Gerardo and his team have been great so far! They did their first walk with our bichon/poodle mix and has been very accommodating to her needs (older dog with a back that acts up sometimes). They're very friendly, punctual, and easy to communicate with. We have our next walk set up in a couple days and plan to use them 1-2 times a week. Would highly recommend!"/>
               </Slide>
 
               <Slide index={1}>
@@ -77,7 +77,7 @@ class Reviews extends Component {
                 clientName="Jennifer S."
                 clientServ="Dog Walking"
                 highlight1="Flexible with scheduling"
-                reviewText="Gerardo, the owner, is great! I know when my dog has bonded to Gerardo as his walker when we run into him on the streets of SOMA and my dog runs right up to him like it’s been too long. Gerardo is not just great with dogs, but is also flexible when scheduling last minute walks when a work trip has popped up."/>
+                reviewText="Gerardo, the owner, is great! I know when my dog has bonded with Gerardo as his walker when we run into him on the streets of SOMA and my dog runs right up to him like it’s been too long. Gerardo is not just great with dogs, but is also flexible when scheduling last minute walks when a work trip has popped up."/>
               </Slide>
 
               <Slide index={6}>
@@ -106,7 +106,7 @@ class Reviews extends Component {
                 highlight1="Super Professional &bull;"
                 highlight2="Authentic &bull;"
                 highlight3="Skilled"
-                reviewText="Gerardo run an excellent job walking company. They are super professional, organized, and friendly and are authentic about caring about and for dogs - they are skilled at dog walking and run their business like professionals."/>
+                reviewText="Gerardo runs an excellent dog walking company. They are super professional, organized, and friendly and are authentic about caring for dogs - they are skilled at dog walking and run their business like professionals."/>
               </Slide>
 
               <Slide index={9}>
@@ -125,7 +125,7 @@ class Reviews extends Component {
                 clientServ="Dog Walking"
                 highlight1="On Time &bull;"
                 highlight2="Reliable"
-                reviewText="Gerardo have been great dog walkers and caretakers for my terrier mix rescue dog. They are always on time and reliable. Would recommend them highly"/>
+                reviewText="Gerardo and his team have been great dog walkers and caretakers for my terrier mix rescue dog. They are always on time and reliable. Would recommend them highly."/>
               </Slide>
 
               <Slide index={11}>
@@ -156,7 +156,7 @@ class Reviews extends Component {
 
           </div>
 
-        
+
 
         </section>
 
