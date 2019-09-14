@@ -25,7 +25,7 @@ function Accordions() {
         </div>
         <div label='Billing Policy:'>
           <p>&bull; Invoices are sent on a weekly basis and are due upon receipt.</p>
-          <p>&bull; Late fees will be applied for overdue invoices after a 3-day grace period.</p>
+          <p>&bull; A 7% late fee will be applied for overdue invoices after a 3-day grace period.</p>
           <p>&bull; Service will be interrupted for unpaid invoices past 7 days from due date.</p>
         </div>
         <div label='Cancellation Policy:'>
