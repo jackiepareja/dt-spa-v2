@@ -48,6 +48,6 @@ $ npm run start
 
 
 ### :hammer_and_wrench: Future Features
-> I've decided to build this web application using React to scale it into a mobile application using React Native. Dog Tales will also soon have an admin console to manage their clients and contractors, scheduling, payment systems and more!
+> Dog Tales will also soon have an admin console to manage their clients and contractors, scheduling, payment systems and more! Moreover, Dog Tales' mobile application will be built using React Native.
 
 ### :pushpin: pareja.jackie@gmail.com | www.jackiepareja.com
