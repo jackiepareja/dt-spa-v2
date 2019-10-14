@@ -1,7 +1,8 @@
+
 # Dog Tales Pack Website MVP
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0e1425c2-cb6e-41c6-8197-d9e55dbdc852/deploy-status)](https://app.netlify.com/sites/dogtalespack/deploys)
 ![StackShare](https://img.shields.io/badge/REACT-BUILD-blue)
 ![StackShare](https://img.shields.io/badge/Windows%20OS-Not%20Compatible-red)
+
 ![Imgur](https://i.imgur.com/tYeCFU8.png)
 
 > A company website that has generated leads to grow a small, San Francisco-based pet services company to a leading competitor in the SF pet industry. Dog Tales has a steady 30% annual growth since 2017 within its six-figure annual revenue. The website design is based on [@JonasSchmedtmann](https://codingheroes.io/)'s Udemy course, [Advanced CSS and SASS](https://www.udemy.com/course/advanced-css-and-sass/). To add a bit of a challenge, I built my version with React. Moreover, instead of using the dev dependencies that Jonas has used (post-cli etc.), I have simply used node-sass and wrote my own scripts for compiling. A caveat is the incompatibility with using Windows OS. Read more below for a work-around!
@@ -47,6 +48,6 @@ $ npm run start
 
 
 ### :hammer_and_wrench: Future Features
-> I've decided to build this web application using React to scale it into a mobile application using React Native. Dog Tales will soon have a admin console to manage their clients and contractors.
+> I've decided to build this web application using React to scale it into a mobile application using React Native. Dog Tales will also soon have an admin console to manage their clients and contractors, scheduling, payment systems and more!
 
 ### :pushpin: pareja.jackie@gmail.com | www.jackiepareja.com
