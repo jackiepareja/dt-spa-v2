@@ -27,10 +27,10 @@ $ npm install
 ```
 - If you are using Windows as your OS, the node-sass package will become incompatible and will run into errors when compiling SASS. Skip step number 1, and start with step number 2.
 
-2. Fork the git repository and delete the package.json file. You will need to initialize npm again and manually download the dependencies. Thankfully, there are only two (for now)!
+2. Fork the git repository and delete the package.json file. You will need to initialize npm again and manually download the dependencies.
 ```
 $ npm init
-$ npm i -D node-sass nodemon
+$ npm i -D node-sass nodemon react pure-react-carousel react-bootstrap react-dom react-modal react-router-dom react-router-hash-link react-scripts react-scrollable-anchor @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 ```
 3. In our package.json file, copy these scripts in our scripts code block.
 ```
