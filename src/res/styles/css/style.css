@@ -424,6 +424,9 @@ body {
     font-size: 3rem;
     color: #eee; }
 
+.carousel .horizontalSlider___281Ls {
+  height: 41rem; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -891,7 +894,7 @@ body {
 .Navnav_wrapper {
   text-align: right;
   position: absolute;
-  top: 3%;
+  top: 1%;
   right: 1.5%;
   z-index: 999; }
   .Navnav_wrapper .navnav__item {
@@ -914,6 +917,10 @@ body {
       background-position: 100%;
       color: #ff8328;
       transform: translate(1rem); }
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .horizontalSlider___281Ls {
+    min-height: 62rem; } }
 
 .Promo {
   position: relative;
