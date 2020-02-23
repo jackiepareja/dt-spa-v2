@@ -7,7 +7,7 @@ import "./res/styles/icon-font.css";
 
 import Home from "./pages/Home";
 
-console.log("%cReact Exists jackiepareja.com", "color: yellow; font-size: 20px");
+console.log("%cReact Exists", "color: yellow; font-size: 20px");
 
 class App extends Component {
   render() {
