@@ -12,17 +12,17 @@ class AboutImgComposition extends Component {
           <div className="composition">
             <img
               src={dogPic3}
-              alt="doggies"
+              alt="Carter, black labrador"
               className="composition__photo composition__photo--p1"
             />
             <img
               src={dogPic1}
-              alt="doggies"
+              alt="Zeus, french bulldog"
               className="composition__photo composition__photo--p2"
             />
             <img
               src={dogPic2}
-              alt="doggies"
+              alt="Ooma, airdale breed"
               className="composition__photo composition__photo--p3"
             />
           </div>

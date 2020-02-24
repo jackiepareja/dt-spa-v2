@@ -24,7 +24,7 @@ class Footer extends Component {
                     <img src={Logo} alt="Dog Tales logo" className="footer__logo" />
                     <br />
                     <br />
-                    <p> 2017-2019 All Rights Reserved </p>
+                    <p> &copy; 2020 Dog Tales Pet Services <br/> All Rights Reserved </p>
                   </div>
                 </div>
               </div>
